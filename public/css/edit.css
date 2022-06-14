@@ -1,0 +1,20 @@
+header{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+    background-color: #800609;
+    display: none;
+}
+.fondo-3{
+    background-image: url("/images/Fondo-3.jpg");
+}
+.bg-mio{
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+}
+footer div{
+    height: 10rem;
+    background-color: #800609;
+    color: white;
+    width: 100%;
+    display: none;
+    
+}

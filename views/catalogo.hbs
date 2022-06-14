@@ -1,0 +1,41 @@
+<body class="fondo-2 ">
+    <div class="container table-responsive">
+        <table class="table table-dark table-striped mt-5">
+            <thead>
+                <tr>
+                    <th colspan="8">
+                        <a href="crud/agregarP "><button class=" btn btn-secondary m-2">Agregar producto </button></a>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col" class="text-center">acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {{#each productos}} 
+                <tr>
+                    <td> {{id}} </td>
+                    <td> {{nombre}} </td>
+                    <td> {{descripcion}} </td>
+                    <td>${{precio}} </td>
+                    <td> <img src="{{urlImagen}}" alt=""> </td>
+                    
+                    <td class="text-center">
+                        <a href=" crud/editado/{{id}}"><button class="btn btn-danger m-2 btn-sm">Borrar</button></a>
+                        <a href=" crud/editado/{{id}}"><button class="btn btn-warning m-2 btn-sm">Cambiar</button></a>
+                    </td>
+                </tr>
+
+                 {{/each}} 
+
+            </tbody>
+        </table>
+    </div>
+
+</body>

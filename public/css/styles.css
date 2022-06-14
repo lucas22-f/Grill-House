@@ -1,0 +1,75 @@
+
+
+header{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.233);
+    background-color: #800609;
+}
+
+
+.carousel-item{
+    background-color: black;
+    position: relative;
+   height: auto;
+  
+}
+.carousel-caption{
+    position: absolute;
+    bottom: 285;
+}
+.bg-img{
+    opacity: 0.6;
+}
+
+.slide-shadow{
+    text-shadow: black 3px 3px 5px;
+    
+}
+.first{
+    position: absolute;
+    bottom: 400;
+}
+
+footer div{
+    height: 10rem;
+    background-color: #800609;
+    color: white;
+    width: 100%;
+    
+}
+footer{
+    width: 100%;
+    border-top: black 20px;
+   
+}
+
+.fondo{
+    background-image: url("/images/fondo-2.jpg");
+    
+}
+.fondo-2{
+    background-image: url("../images/fondo-2.jpg");
+}
+.login{
+    opacity: 0.5;
+}
+
+
+.wform{
+    max-width: 35rem;
+    max-height: auto;
+   
+}
+.bg-mio{
+    background:rgba(0, 0, 0, 0.699)
+}
+textarea {
+    resize: none;
+}
+.wtable{
+    max-width: 50rem;
+}
+
+.colornav{
+    color: white;
+}
+

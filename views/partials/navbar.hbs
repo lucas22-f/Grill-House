@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg text-white ">
+  <div class="container-fluid text-white">
+
+    <button class="navbar-toggler text-white colornav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white colornav"></span>
+    </button>
+    <div class="collapse navbar-collapse text-white colornav" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link active  text-white" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="nosotros"> Nosotros</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="/indexCatalogo"> Catalogo</a> 
+        </li>
+        {{#if usuario}}   {{!-- consultamos si existe un usuario loggeado
+        para mostrar las opciones que queramos en este caso ===> --}}
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="home">Seccion Principal</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="login/logout">Cerrar Sesión</a>
+        </li> 
+        
+        {{else}}   
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="login">Iniciar Sesión (admin)</a>
+        </li> 
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="/css/edit.css">
+    <link rel="shortcut icon" href="../public/images/logo2.jpg" type="image/x-icon">
+</head>
+
+<body class="fondo-3">
+
+<div class="container shadow mt-5 p-3 bg-mio">
+     
+    <form action="/crud/editarP" method="post" enctype="multipart/form-data">
+        <input type="text" name="id" value="{{productos.id}}" hidden>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" value="{{productos.nombre}}">
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion">Descripcion</label>
+            <input type="text" class="form-control" name="descripcion" id="descripcion"value="{{productos.descripcion}}">
+
+        </div>
+        
+        <input type="text" name="imagenPrev" value="{{productos.imagen}}" hidden>
+       
+
+        <div class="form-group">
+            <label for="imagenFile">Imagen</label >
+            <input type="file" class="form-control" name="imagenFile" id="imagenFile">
+        </div>
+    
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input type="text" class="form-control" name="precio" id="precio" value="{{productos.precio}}">
+
+        <button type="submit" class="btn btn-warning mt-3">Cambiar</button>
+        <a href="/crud/eliminarP/{{productos.id}}"><input type="button" value="Borrar" class="btn btn-danger mt-3"></a>
+        <a href="/crud"><input type="button" value="Cancelar" class="btn btn-secondary mt-3"></a>
+    </form>
+
+</div>
+
+</body>
